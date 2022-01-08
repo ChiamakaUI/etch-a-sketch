@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Licorice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500&display=swap');
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #e8e8e8;
+}
+
+h2{
+    font-family: 'Licorice', cursive;
+    font-size: 52px;
+    text-align: center;
+    color: #f7f7f3;
+    margin: 1% 0;
+}
+
+label{
+    font-family: 'Playfair Display', serif;
+    font-weight: 1000;
+    /* color: #f7f7f3; */
+    color: #333;
+}
+
+input[type='color']{
+    -webkit-appearance: none;
+    width: 80px;
+    height: 80px;
+    border: none;
+    outline: none;
+    color: inherit;
+    border-radius: 15%;
+}
+
+#backgroundPicker{
+    /* float: right; */
+    position: fixed;
+    margin: 3% auto;
+}
+
+/* #color{
+    height: 50px;
+    width: 50px;
+} */
+/* button, input {
+    width: 100%;
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    outline: none;
+} */
+
+#bacKColor{
+    -webkit-appearance: none;
+    width: 80px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: inherit;
+    border-radius: 15%;
+    margin: 4% auto;
+}
+
+#mainArea{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: 2% auto;
+    align-items: center;
+}
+
+.controls{
+    width: 30%;
+}
+
+.controls input{
+    display: block;
+    margin: 8% auto;
+}
+
+.controls button{
+    display: block;
+    padding: 10px 0;
+    width: 150px;
+    margin: 8% auto;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    cursor: pointer;
+    /* box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px; */
+    
+}
+
+.active{
+    background-color: rgb(8, 1, 1);
+    border: 1px solid #333;
+    color: #f7f7f3;
+}
+
+.main{
+    width: 65%;
+}
+
+#board{
+    background-color: #fff;
+    display: grid;
+    width: 500px;
+  height: 500px;
+    /* height: 750px; */
+    /* width: 100%; */
+    width: auto;
+    cursor: pointer;
+     grid-template-columns: auto auto auto auto;
+      box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+      overflow: hidden;
+      /* grid-template-columns: repeat(64, 1fr);
+    grid-template-rows: repeat(64, 1fr); */
+
+
+}
+
